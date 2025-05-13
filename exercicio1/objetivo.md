@@ -1,0 +1,1 @@
+Crie uma página HTML completa com todos os elementos estruturais básicos (<!DOCTYPE>, <html>, <head>, <body>).
