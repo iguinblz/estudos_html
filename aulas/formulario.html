@@ -9,24 +9,82 @@
       <title>Formulário</title>
       <h1>Inserção de dados (Formulário)</h1>
         <p>Preencha o formulário abaixo:</p>
-        <form>   
+        <form onsubmit="alert('Seu cartão não foi cromado! Teste agora o do seu papai!')">
             <label for="card_field">Dados:</label>
-            <input id="card_field" placeholder="Número do cartão">
+            <input id="card_field" placeholder="Número do cartão" required>
             <br><br>
             <label for="cvv_field">CVV:</label>
-            <input type="cvv_field" placeholder="CVV verso do cartão">
+            <input type="cvv_field" placeholder="CVV verso do cartão" required>
             <br><br>
             <label for="cpf_field">CPF titular:</label>
-            <input type="cpf_field" placeholder="CPF do titular do cartão">
+            <input type="cpf_field" placeholder="CPF do titular do cartão" required>
             <br><br>
             <label for="password">Senha cartão:</label> 
-            <input id="password" type="password" placeholder="Senha do cartão">  
+            <input id="password" type="password" placeholder="Senha do cartão" required>  
             <br><br>
             <label for="email_field">E-mail para receber seu RP:</label>
-            <input id="email_field" type="email" placeholder="Seu melhor E-mail">
+            <input id="email_field" type="email" placeholder="Seu melhor E-mail"required>
             <br><br>    
             <input type="submit" value="Veja se seu cartão foi cromado!">	
+            <br><br>
+            <h2>Seu power ranger favorito</h2>
+            <label for="ranger">Escolha seu ranger:</label>
+            <br>
+            <label for="red">Vermelho</label>
+            <input type="radio" id="red" name="ranger" value="Vermelho">
+            <br>
+            <label for="yellow">Amarelo</label>
+            <input type="radio" id="yellow" name="ranger" value="Amarelo">	
+            <br>
+            <label for="black">Preto</label>
+            <input type="radio" id="black" name="ranger" value="Preto">
+            <br>
+            <label for="green">Verde</label>
+            <input type="radio" id="green" name="ranger" value="Verde">	
+             <br>
+            <label for="pink">Rosa</label>
+            <input type="radio" id="pink" name="ranger" value="Rosa">
+            <br>
+            <label for="grey">Cinza</label>
+            <input type="radio" id="grey" name="ranger" value="Cinza">	
+            
+            <br><br>   
+            
+            <h2>Coisas que se sumissem da sua casa misteriosamente ninguém sentiria falta!</h2>
+            <input type="checkbox" id="item1" name="item1" value="Clock">
+            <label for="item1">Rolex do papai</label>
+            <br>
+            <input type="checkbox" id="item2" name="item2" value="Purse">
+            <label for="item2">Bolsa de prada da mamãe</label>
+            <br>
+            <input type="checkbox" id="item3" name="item3" value="Testamento">
+            <label for="item3">Testamento do terreno no coitê do noia de vovô</label>
+            <br>    
+            <input type="checkbox" id="item4" name="item4" value="STape">
+            <label for="item4">S*x tape do papai e da mamãe para servir de chantagem</label>
+
+            <h2>Selecione um esporte</h2>
+            <select name="esporte" id="esporte" required>
+            <option selected disabled value="">Selecione um esporte</option>
+            <option value="futebol">Futebol</option>
+            <option value="basquete">Basquete</option> 
+            <option value="volei">Vôlei</option>
+            <option value="handebol">Handebol</option>  
+            <option value="rugby">Rugby</option>
+            </select>
+            <br><br> 
+             <h2>Nos fale da sua experiência com o site</h2>	
+            <textarea id="feedback" name="feedback" rows="4" cols="50" placeholder="Deixe seu feedback aqui!"></textarea>
+            <br><br>
+             <input type="submit" value="Enviar dados">
+             <br><br>
+            <input type="reset" value="Limpar campos">
+            <br><br>    
+         
+
+
         </form>
+       
         <hr> <br>
 <a href="4th.html" > Retorno </a>
 </body>
